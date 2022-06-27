@@ -1,0 +1,801 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+.fondo_enca {
+    background-color: #112031;
+    margin:0;
+    margin-top: 0;
+}
+.nav_clas{
+    align-items: center;  
+    justify-content: center; /* centra a lo ancho de la pag*/
+    border-bottom: 3px solid #112031;
+    margin-top: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin:20px;
+    width:110px; 
+    height:110px;
+    float: left;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding-bottom: 5px;
+    align-items: center;
+    background-color: #112031;
+}
+
+.sub_menu{
+    position: absolute;
+    list-style-type: none;
+    display: none; /*me esconde la caja*/
+    color: white;
+}
+.menu_puntos,.submenu_puntos{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*le saco los puntos a mi lista*/
+    background-color: #5f767a;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.menu_link,.submenu_link{
+    text-decoration: none;
+}
+.menu_puntos:hover.sub_menu {
+    display: block;                                   
+}                                    
+
+header a{ /*le saco lo subrayado y el color azul a mi menú*/
+    text-decoration: none;
+    color: white;
+}
+
+
+.color_font {    
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.fuente__1{
+    font-style:initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 35px;
+    font-size: 35px;
+    text-align: center;
+}
+.fuente__2{
+    margin-top: 5px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.fotos{
+    display:flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 300px; 
+
+}
+
+.niv_educativo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 0px;   
+}
+.fondo_niveduc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #112031;
+    border-radius: 40px;
+}
+article{
+    display:block;
+}
+
+.articulo_img{
+   align-items: center; 
+   justify-content: center;
+   width: 300px;
+   height: 250px; 
+   margin-top: 50px;
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-bottom: 0px;
+  /* border-radius: 50px; /*redondeo los bordes*/
+}
+
+.art_comuni{
+    align-items: center; 
+    justify-content: center;
+    width: 200px;
+    height: 200px; 
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.articulo_p{
+    display: flex;
+    padding:5px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique ;
+    color: white;
+    background-color: #112031;
+    /*border-radius: 10px;*/
+}
+.fondo_not{
+    background-color: #5f767a;
+    border-radius: 20px;
+}
+.noticias{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    color: white;
+}
+
+
+.fechas_inscripciones{
+    display: flex;
+    color:black;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabla_inscripciones{
+    margin-top: 20px;
+    border-color: black;
+}
+
+.font_tabla{
+    font-size: 30px;
+}
+.logo_footer{
+    display: flex;
+    align-items: center;
+    width:90px; 
+    height:90px;
+    float: left;
+    padding-bottom: 0;
+}
+.fondo_footer{
+    text-align: center;
+    background-color: #112031;
+    margin-top:30px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+
+.alin_footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    margin-left: 0px;
+}
+
+.font_pie{
+    display: flex;
+    font-style:initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.font_pie2{
+    align-items: center;
+    display: flex;  
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+
+.comunicate{
+    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height:30px;
+}
+.horario{
+    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    line-height:30px;
+}
+.redes{
+    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: top;
+    line-height:30px;
+}
+.visitanos{    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height:30px;
+
+}
+
+.art_prese_historia{
+    text-align: center;
+    font-size:30px;
+    background-color:#112031;
+    margin-left:0px;
+    margin-right: 0px;
+    align-items: center;
+    color: white;
+
+}
+
+.texto_institucional{
+
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    padding-right: 0;
+    color: black;
+    text-align: justify;
+    margin-left:0px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+
+.institucional{
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+
+
+.niveles{
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+
+.titulo_niveles{
+
+    text-align: center;
+    font-size:30px;
+    background-color:#112031;
+    margin-left:0px;
+    margin-right: 0px;
+    align-items: center;
+    color: white;
+}
+.ver_mas{
+    background-color: #112031;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    padding-right: 0;
+    color: white;
+    text-align: center;
+    margin-left:0px;
+    line-height: 30px;
+    margin-top: 10px;   
+    padding: 0;
+    margin-left: 700px;
+    margin-right: 400px;
+    border-radius: 10px;
+}
+.texto_niveles{
+
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    padding-right: 0;
+    color: black;
+    text-align: justify;
+    margin-left:0px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.horarios_niveles{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    color: black;
+    text-align: justify;
+    margin-left:50px;
+    line-height: 30px;
+}
+
+section article h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    color: black;
+    text-align: justify;
+    margin-left:50px;
+    line-height: 30px;
+
+}
+
+.tabla_niveles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border: 3px double black;
+    padding:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+.bachillerato{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    color: black;
+    text-align: justify;
+    margin-left:50px;
+    line-height: 30px;
+}
+
+.section__article{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 400px;
+    margin-right: 100px;
+
+}
+
+.articulo_form{
+    border: 1px solid black;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contacto_form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contacto_mensaje{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width:505px;
+    text-align:left ;
+    font-size: 20px;
+    margin-top: 5px;
+ 
+}
+
+.input_nombre{
+    display: inline;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border: 1px solid rgb(116, 114, 114);
+    text-align: center;
+    width: 505px;
+}
+
+.tamaño_input{
+    display: inline;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border: 1px solid rgb(116, 114, 114);
+    text-align: center;
+    width: 250px;
+}
+
+.titulo_contacto{
+
+    display: block;
+    justify-content: right;
+    text-align: center;
+    font-size:30px;
+    background-color:#112031;
+    align-items: center;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.texto_contacto{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+   }
+
+#grilla{
+    display:grid;
+    grid-template-areas: 
+    "miHeader miHeader"
+    "margen blog"
+    "margen noticias"
+    "miFooter miFooter";
+    grid-template-rows: 1fr 1fr ;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    grid-area: miHeader;
+    background-color: #112031;
+}
+
+header div{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    align-items: center;
+}
+
+header ul li{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+header a{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*le saco los puntos a mi lista*/
+    background-color: #5f767a;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+section#margen{
+    background-color: rgb(216, 209, 209);
+    grid-area: margen;
+    border-radius: 40px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    padding-top: 50px;
+    width: 300px;
+    visibility: visible; /*oculto el margen*/
+}
+
+
+section#margen h3{
+    border-bottom: 1px solid black;
+    margin: 20px;
+    line-height: 0;
+    padding: 20px;
+   
+}
+
+section#blog{
+    width: 1000px;
+    grid-area: blog;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 0px;   
+
+}
+section#blog:hover{
+    background-image: -o-linear-gradient(to left, blue, white);
+}
+
+section#blog article img{
+    display: felx;
+    align-items: center; 
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 30px;
+}
+section#blog p{    
+    display: flex;
+    padding:5px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique ;
+    color: white;
+    background-color: #112031;}
+
+section#noticias{
+    width: 1000px;
+    grid-area: noticias;
+    background-color: aqua;
+}
+section#noticias h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+footer#miFooter{
+    grid-area: miFooter;
+    background-color: #112031;
+    display: grid;
+    grid-template-areas: 
+    "nombre contacto horario redes direccion";
+    grid-template-columns: 20% 20% 20% 20% ;
+    grid-column-gap:20px ;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer#miFooter article p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+footer#miFooter article a{
+    font-size: 20px;
+   
+}
+#nombre{
+    grid-area: nombre ;
+}
+
+#contacto{
+    line-height: 30px; /*ARREGLAR ICONOS*/
+    grid-area: contacto ;
+}
+
+#horario{
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    line-height: 30px;
+    grid-area: horario;
+    padding-left: 30px;
+}
+
+i{
+    font-size: 20px; /*ARREGLAR ICONOS*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#redes{
+    line-height: 30px;
+    grid-area: redes;
+}
+
+#direccion{
+    line-height: 30px;
+    grid-area: direccion ;
+}
+
+#grilla_contacto{
+    display: grid; 
+    grid-template-areas: 
+    "miHeader miHeader"
+    "foto tel"
+    "caja ubicacion"
+    "caja horario"
+    "miFooter miFooter";
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+#foto{
+    grid-area: foto;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 300px;
+}
+
+#tel{
+    grid-area: tel;
+    background-color:#5f767a;
+    border-radius: 30px;
+    color:white;
+    margin-right: 300px;
+
+}
+
+.telefono_dia{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    margin-right: 300px;
+
+ 
+}
+
+.mail_hora{
+   display: flex;
+   justify-content: center;  
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-style: normal;
+   margin-right: 200px;
+
+}
+
+.caja{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-area: caja;
+    border-radius: 30px;
+    background-color:#5f767a;
+    margin-left: 300px;
+}
+
+
+#ubicacion{
+    grid-area: ubicacion;
+    border-radius: 30px;
+    background-color:#5f767a;
+    margin-right: 300px;
+
+}
+
+#hora{
+    grid-area: horario;
+    border-radius: 30px;
+    background-color:#5f767a;
+    color:white;
+    margin-right: 300px;
+
+}
+
+
+@media screen and (max-width:992px){
+    #grilla{
+        grid-template-areas: 
+        "miHeader"
+        "blog"
+        "noticias"
+        "miFooter";
+    }
+    
+    #margen{
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (max-width:992px){
+    #grilla_contacto{
+        grid-template-areas: 
+        "miHeader"
+        "foto"
+        "tel"
+        "ubicacion"
+        "horario"
+        "caja"
+        "miFooter";
+    }
+
+
+}
