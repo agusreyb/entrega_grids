@@ -464,7 +464,6 @@ section article h3{
     text-align:left ;
     font-size: 20px;
     margin-top: 5px;
- 
 }
 
 .input_nombre{
@@ -494,7 +493,7 @@ section article h3{
     background-color:#112031;
     align-items: center;
     color: white;
-    border-radius: 20px 20px 0px 0px;
+
 
 }
 .texto_contacto{
@@ -505,6 +504,7 @@ section article h3{
     font-style: normal;
     text-align: center;
     color: white;
+    padding: 5px;
    }
 
 #grilla{
@@ -545,7 +545,7 @@ header ul{
 
 header ul li{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 25px;
     padding-bottom: 5px;
     align-items: center;
@@ -692,11 +692,11 @@ i{
     display: grid; 
     grid-template-areas: 
     "miHeader miHeader"
-    "foto tel"
+    "caja tel"
     "caja ubicacion"
     "caja horario"
     "miFooter miFooter";
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 100%;
@@ -708,15 +708,14 @@ i{
     grid-area: foto;
     border: 1px solid black;
     border-radius: 30px;
-    margin-left: 300px;
+    margin:auto;
 }
 
 #tel{
     grid-area: tel;
     background-color:#5f767a;
-    border-radius: 30px;
     color:white;
-    margin-right: 300px;
+    margin: auto;
 
 }
 
@@ -726,7 +725,7 @@ i{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
-    margin-right: 300px;
+    margin:auto;
 
  
 }
@@ -737,7 +736,7 @@ i{
    font-size: 20px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: normal;
-   margin-right: 200px;
+   margin: auto;
 
 }
 
@@ -748,25 +747,23 @@ i{
     grid-area: caja;
     border-radius: 30px;
     background-color:#5f767a;
-    margin-left: 300px;
+    margin:15px
+    
 }
 
 
 #ubicacion{
     grid-area: ubicacion;
-    border-radius: 30px;
     background-color:#5f767a;
-    margin-right: 300px;
+    margin:auto;
 
 }
 
 #hora{
     grid-area: horario;
-    border-radius: 30px;
     background-color:#5f767a;
     color:white;
-    margin-right: 300px;
-
+    margin:auto;
 }
 
 
@@ -779,23 +776,27 @@ i{
         "miFooter";
     }
     
-    #margen{
-        visibility: hidden;
+    section#margen{
+        display: none;
     }
 
-}
-
-@media screen and (max-width:992px){
     #grilla_contacto{
         grid-template-areas: 
         "miHeader"
-        "foto"
         "tel"
         "ubicacion"
         "horario"
         "caja"
         "miFooter";
+        grid-template-rows: 70% 30%;
+
     }
 
+    .columna{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+
+    }
 
 }
